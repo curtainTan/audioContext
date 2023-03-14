@@ -16,6 +16,10 @@ const Page1 = () => {
 		if (canvasElRef.current) {
 			canvasCtxRef.current = canvasElRef.current.getContext('2d');
 		}
+
+		return () => {
+			audioCtx.current?.close();
+		}
 	}, []);
 
 	const init = () => {

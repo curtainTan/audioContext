@@ -2,3 +2,15 @@
   width: 100%;
 }
 
+.link {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 8px;
+}
+
+.isActiveLink {
+  background-color: #dcdde1;
+}
+

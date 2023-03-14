@@ -16,6 +16,12 @@ const Page1 = () => {
 	const [gainValue, setGainValue] = useState(1);
 	const [pannerValue, setPannerValue] = useState(1);
 
+	useEffect(() => {
+		return () => {
+			audioCtx.current?.close();
+		}
+	}, [])
+
 	const init = () => {
 		audioCtx.current = new AudioContext();
 
